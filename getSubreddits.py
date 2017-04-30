@@ -29,8 +29,8 @@ for line in infile:
 reddit = praw.Reddit(user_agent='DS3001 Group 3',
                      client_id='G24ch0kTE7WWdg',
                      client_secret="OpT4JxILDWB5YoTbmeHPccZneis",
-                     username='SeventhSectionSword',
-                     password='jscripter1')
+                     username='asd',
+                     password='asd')
 
 outfile = open('subscribers2.json','w')
 

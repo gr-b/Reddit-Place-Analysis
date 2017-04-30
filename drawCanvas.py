@@ -10,18 +10,19 @@ for line in infile:
         item['ratio'] = item['subscribers'] / item['area']
     except:
         continue
-    if item['subscribers'] > 10:
+    if item['subscribers'] > 8000:
         items += [item]
 
 sorted_items = sorted(items, key= lambda x: x['ratio'])
 ratios = []
 for item in sorted_items:
-    #print "{} : {} - > {}".format(item['sub'], item['ratio'], item['area'])
+    print "{} : {} - > {}".format(item['sub'], item['ratio'], item['area'])
     
     #if item['sub'] == 'wpi' or item['sub'] == 'rpi':
     #    print item
     ratios += [item['ratio']]
 
+'''
 from Tkinter import *
 
 master = Tk()
@@ -52,4 +53,4 @@ for item in sorted_items:
         w.create_polygon(*arglist, activefill='red', fill=color)
 
 mainloop()
-
+'''
