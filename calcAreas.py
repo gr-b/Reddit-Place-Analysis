@@ -36,11 +36,11 @@ for sub in goodsubs:
 
     #print("{} : {}".format(subreddit, total))
     #sub['subreddit'] = sub['subreddit'].split('/')[len(sub['subreddit'].split('/'))-1]
-    item = {'sub':sub['subreddit'], 'area':total}
+    item = {'sub':sub['subreddit'], 'area':total, 'path':points}
     items += [item]
     #print point
 
-outfile = open('areas.json','w')
+outfile = open('areas2.json','w')
 for item in items:
     outfile.write(json.dumps(item) + '\n')
         

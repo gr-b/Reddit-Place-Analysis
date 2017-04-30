@@ -18,7 +18,7 @@ def getSub(rawname):
         subname = subname[:-1]
     return subname
 
-infile = open('areas.json','r')
+infile = open('areas2.json','r')
 
 items = []
 for line in infile:
@@ -32,7 +32,7 @@ reddit = praw.Reddit(user_agent='DS3001 Group 3',
                      username='SeventhSectionSword',
                      password='jscripter1')
 
-outfile = open('subscribers.json','w')
+outfile = open('subscribers2.json','w')
 
 for item in items:
     subname = getSub(item['sub'])
